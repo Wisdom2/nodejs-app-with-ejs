@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/styles.css" type="text/css">
+</head>
+<body>
+    <form action="/form-send" method="post">
+        <div>
+            <label>Who</label>
+            <input type="text" name="who" value="<%= qs.who %>">
+        </div>
+        <div>
+            <label>dept</label>
+            <input type="text" name="dept"  value="<%= qs.dept %>">
+        </div>
+        <div>
+            <label>email</label>
+            <input type="text" name="email"  value="">
+        </div>
+        <div>
+           <button type="submit">Save</button>
+        </div>
+    </form>
+</body>
+</html>

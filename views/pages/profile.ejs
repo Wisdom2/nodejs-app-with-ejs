@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/styles.css" type="text/css">
+</head>
+<body>
+    <%- include ('../partials/nav.ejs') %>
+    <h1>This is an ejs file</h1>
+    <%= person %>
+
+    <div>
+        Age: <%= data.age %>
+    </div>
+    <div>
+    Job: <%= data.job %>
+    </div>
+    <div>
+    <ul>
+        <% data.hobbies.forEach(element => { %>
+            <li><%= element %></li>
+        <%});%>
+    </ul>
+    </div>
+</body>
+</html>
